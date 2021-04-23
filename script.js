@@ -1,2 +1,2 @@
-(()=>{"use strict";console.log("Script started successfully"),WA.openCoWebSite("https://workadventu.re")})();
+(()=>{"use strict";console.log("Script started successfully"),WA.sendChatMessage("Hello chers collègues ! Bienvenue au B1 comme si vous y étez (ou presque). ","Thomas"),WA.sendChatMessage("Vous trouverez plusieurs petites surprises sur la carte, je vous laisse découvrir. Un salon est dispo juste à droite dans le grand bureau.","Fabien")})();
 //# sourceMappingURL=script.js.map
