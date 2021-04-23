@@ -7,22 +7,28 @@ let helloWorldPopup;
 
 console.log('Script started successfully');
 //WA.openCoWebSite('https://workadventu.re');
-//WA.sendChatMessage('Hello world', 'Mr Robot');
 
 // Open the popup when we enter a given zone
-helloWorldPopup = WA.onEnterZone('myZone', () => {
-    console.log('Zone OK');
-    WA.openPopup("popupPrint", 'Hello world!', [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    });
-}]);
+// helloWorldPopup = WA.onEnterZone('myZone', () => {
+//     console.log('Zone OK');
+//     WA.openPopup("popupLayer", 'Hello world!', [{
+//         label: "Close",
+//         className: "primary",
+//         callback: (popup) => {
+//             // Close the popup when the "Close" button is pressed.
+//             popup.close();
+//         }
+//     });
+// }]);
 
 // Close the popup when we leave the zone.
-WA.onLeaveZone('myZone', () => {
-    helloWorldPopup.close();
-});
+// WA.onLeaveZone('myZone', () => {
+//     helloWorldPopup.close();
+// });
+
+/* 
+ * Handle the chat
+ */
+WA.sendChatMessage('Hello chers collègues ! Bienvenue au B1 comme si vous y étez (ou presque). ', 'Thomas');
+WA.sendChatMessage('Vous trouverez plusieurs petites surprises sur la carte, je vous laisse découvrir. Un salon est dispo juste à droite dans le grand bureau.' , 'Fabien');
+
